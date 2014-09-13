@@ -111,7 +111,7 @@ font-style:normal;
 
 	h3 {
 		font-size: 1.5em;
-		line-height: 1.25em;
+		margin:0.5em 0;
 	}
 
 	strong, b {
@@ -156,19 +156,25 @@ font-style:normal;
 		font-style: italic;
 	}
 
-	p, ul, ol, dl, table {
+	ul, ol, dl, table {
 		margin-bottom: 1em;
 	}
 
 	header {
-		margin-bottom: 1em;
+		margin-bottom: 0em;
 	}
 
 		header p {
 			display: block;
-			margin: 1em 0 0 0;
-			padding: 0 0 0.5em 0;
 		}
+	header .title{
+		font-size: 0.9em;
+		line-height: 100%;
+		font-weight: 500;
+		margin-bottom:0.5em;
+		font-style: italic;
+		color:#888;
+	}
 
 	footer {
 		margin-top: 2em;
@@ -571,9 +577,17 @@ font-style:normal;
 
 				.main.intro h2 {
 					font-size: 2.5em;
-					line-height: 0.5em;
+					line-height: 1em;
 					letter-spacing: -4px;
+					margin-bottom:0.5em;
 				}
+
+				.main.intro h2 small{
+					font-size: 0.6em;
+					font-weight:100;
+					letter-spacing: 0;
+				}
+
 
 				.main.intro .content {
 					opacity: 1.0;
@@ -724,9 +738,9 @@ font-style:normal;
 	}
 
 	#intro .subtitle{
-		font-size:1em;
+		font-size:.85em;
+		line-height:1.3em;
 	}
-
 
 /*********************************************************************************/
 /* One                                                                           */
