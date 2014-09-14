@@ -742,6 +742,62 @@ font-style:normal;
 		line-height:1.3em;
 	}
 
+/*******************************************************************************/
+/* Vimeo																																			*/
+/*******************************************************************************/
+#vclose{
+	position: absolute;
+	top:2em;
+	right: 4em;
+	display: none;
+}
+
+#vclose a img{
+	display: block;
+	margin: 0;
+	width: 50px;
+	height: 50px;
+	transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-webkit-transition: all .2s;
+	-o-transition: all .2s;
+	-moz-transition: all .2s;
+	-ms-transition: all .2s;
+	transition: all .2s;
+	opacity: 0.5;
+}
+
+
+#vclose a:hover img{
+	transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-webkit-transition: all .2s;
+	-o-transition: all .2s;
+	-moz-transition: all .2s;
+	-ms-transition: all .2s;
+	transition: all .2s;
+	opacity: 1;
+}
+
+#masker{
+	position:fixed;
+	top:0;
+	left:0;
+	display:block;
+	z-index:9999;
+	width:100%;
+}
+
+#vimeo{
+	width:1024px;
+	margin:2em auto;
+}
 /*********************************************************************************/
 /* One                                                                           */
 /*********************************************************************************/

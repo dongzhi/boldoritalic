@@ -17,6 +17,27 @@
 
 	// jQuery
 		jQuery(function() {
+			$( document ).ready(function() {
+				$('a.play').on('click',function(){
+					$('#vclose').show();
+					$('#masker').css({
+						'background':'#000',
+						'height': $(window).height(),
+					});
+					$('#masker').show();
+					$('body').css({
+						'overflow':'hidden',
+					});
+					$('#vimeo').html("<iframe src='http://player.vimeo.com/video/80152573?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1' width='1024' height='576' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>");
+				});
 
-
+				$('#vclose a').click(function(){
+					$('body').css({
+						'overflow':'scroll',
+					});
+					$('#vclose').hide();
+					$('#masker').hide();
+					$('#vimeo').html("");
+				});
+			});
 		});

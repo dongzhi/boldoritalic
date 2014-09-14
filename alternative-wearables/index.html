@@ -7,6 +7,7 @@
 		<meta name="keywords" content="Design Fiction, Alternative Wearables" />
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 		<script src="js/jquery.min.js"></script>
+		<script src="js/init.js"></script>
 		<link rel="stylesheet" href="css/style.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
@@ -22,6 +23,10 @@
 						<a href="javascript:void(0)" class="button play down">More</a>
 					</footer>
 				</div>
+				<div id="masker">
+					<div id="vimeo"></div>
+					<div id="vclose"><a href="javascript:void(0)"><img src="css/images/close_white.svg"/></a></div>
+				</div>
 				<!-- <a href="#two" class="button style1 down anchored">Next</a> -->
 			</section>
 
@@ -29,7 +34,7 @@
 			<section id="one" class="main style3 fullscreen">
 				<div class="content box">
 					<header>
-						<h3>Why Wearables?</h3>
+						<h3>Asking Why</h3>
 					</header>
 					<p>What is a "wearable"? You might be thinking of smart watches, wristbands and google glass. Altogether they painted a perfect future for us, where everything is being tracked and our human abilities greatly enhanced. This singular future picture somehow creates aesthetic fatigue, making us question if there can be other variations to the story.</p>
 
@@ -97,6 +102,29 @@
 					<p>We designed a disposable wearable that you can stick to your temple when you feel drowsy. It brings you instant mental clarity just like a shot of Expresso. And when you feel better, just throw it away.</p>
 				</div>
 			</section>
+
+		<!-- Comments -->
+		<section id="commments" class="main style2 fullscreen">
+			<div class="content box">
+
+		<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'alternative-wearables'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+			</div>
+		</section>
 
 		<!-- Footer -->
 			<footer id="footer">
