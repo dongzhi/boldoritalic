@@ -98,6 +98,10 @@ font-style:normal;
 		font-weight: 300;
 	}
 
+	h2 span{
+		font-style: italic;
+	}
+
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
 			text-decoration: none;
@@ -578,13 +582,13 @@ font-style:normal;
 				.main.intro h2 {
 					font-size: 2.5em;
 					line-height: 1em;
-					letter-spacing: -4px;
+					letter-spacing: -1px;
 					margin-bottom:0.5em;
 				}
 
 				.main.intro h2 small{
-					font-size: 0.6em;
-					font-weight:100;
+					font-size: 0.4em;
+					font-weight:400;
 					letter-spacing: 0;
 				}
 
