@@ -28,7 +28,7 @@
 					$('body').css({
 						'overflow':'hidden',
 					});
-					$('#vimeo').html("Video Here");
+					$('#vimeo').html('<iframe src="http://player.vimeo.com/video/106142989?byline=0&amp;portrait=0&amp;autoplay=1" width="1024" height="576" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
 				});
 
 				$('#vclose a').click(function(){
