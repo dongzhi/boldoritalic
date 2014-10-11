@@ -1,5 +1,4 @@
 (function($){
-	var more_status = 0;
 
 	$(document).ready(function(){
 	    var sW =$(window).width();
@@ -13,20 +12,35 @@
 			'height': sW*9/16,
 		});
 
-		$('.more_icon').on('click','a',function(){
-			if(!more_status){
+		$('.more_icon').on('mouseenter','a',function(){
 				$('.more ul').fadeIn(400);
 				$('.more_icon a').css({
 					'border-color':'#000',
 				});
-				more_status = 1;
-			}else{
+
+		});
+
+		$('.more_icon').on('mouseleave','a',function(){
 				$('.more ul').fadeOut(400);
 				$('.more_icon a').css({
 					'border-color':'transparent',
 				});
-				more_status = 0;
-			}
+		});
+
+
+		$('.more').on('mouseenter','ul',function(){
+				$('.more ul').stop();
+				$('.more_icon a').css({
+					'border-color':'#000',
+				});
+
+		});
+
+		$('.more').on('mouseleave','ul',function(){
+				$('.more ul').fadeOut(400);
+				$('.more_icon a').css({
+					'border-color':'transparent',
+				});
 
 		});
 
