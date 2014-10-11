@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 /* Fonts */
+@font-face { font-family: 'Orator Std'; src: url('font/OratorStd.eot'); src: url('font/OratorStd.eot?#iefix') format('embedded-opentype'), url('font/OratorStd.svg#Orator Std') format('svg'), url('font/OratorStd.ttf') format('truetype'); font-weight: normal; font-style: normal;}
 
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, code, em, img, q, small, strong, dd, dl, dt, li, ol, ul, fieldset, form, label, table, tbody, tr, th, td, input {
   margin:0;
@@ -10,7 +11,6 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a,
 
 body{
   position:relative;
-  /* background:#fff url('../image/bg.jpg') no-repeat left top; */
   background:#fff;
   background-size:cover;
   font-size:13pt;
