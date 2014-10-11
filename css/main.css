@@ -15,6 +15,7 @@ body{
   background:#fff;
   background-size:cover;
   font-size:13pt;
+  overflow:hidden;
 }
 
 .more{
