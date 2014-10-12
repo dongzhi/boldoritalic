@@ -118,7 +118,6 @@ width: auto;
 
 #header{
 	text-align: center;
-	height: 750px;
 	background: url('images/header_dangerous_popsicle.jpg') no-repeat top center;
   background-size: cover;
   background-attachment: fixed;
@@ -127,7 +126,7 @@ width: auto;
 }
 
 .banner{
-  padding-top:23%;
+  padding-top:20%;
 }
 
 .project_name{

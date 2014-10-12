@@ -9,7 +9,7 @@
 		});
 
 		$('#header').css({
-			'height': sW*9/16,
+			'height': $(window).width()*8/16
 		});
 
 		$('.more_icon').on('mouseenter','a',function(){
