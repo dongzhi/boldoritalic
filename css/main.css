@@ -99,3 +99,7 @@ body{
   width:100%;
   float:left;
 }
+
+#forpreload{
+  display:none;
+}
