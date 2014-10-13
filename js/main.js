@@ -3,10 +3,11 @@
 
 var count = 1;
 var slideWidth = $(window).width()/2;
-var slideHeight = $(window).height();
+var slideHeight = $(window).width()*3/5;
 var slideCount = 2;
 var sliderUlWidth = slideCount * slideWidth;
 var sliderUlHeight = slideCount * slideHeight;
+var timer = null;
 
 var slider = function(){
   var i = getRandomInt(0,4);
@@ -49,8 +50,8 @@ var slider = function(){
 var moveLeft = function(id){
   $('#'+id+' ul').append('<li><img src="image/'+ id + count +'.jpg" width="100%"/></li>');
 
-  $('#'+id+' ul').css({ width: sliderUlWidth, top:0, left:0});
-  $('#'+id+' ul li').css({ width:slideWidth, float: "left" });
+  $('#'+id+' ul').css({ width: sliderUlWidth, height:slideHeight, top:0, left:0});
+  $('#'+id+' ul li').css({ width:slideWidth, height:slideHeight,float: "left" });
 
   $('#'+id+' ul').animate({
             left: - slideWidth
@@ -69,8 +70,8 @@ var moveLeft = function(id){
 var moveRight = function(id){
   $('#'+id+' ul').prepend('<li><img src="image/'+ id + count +'.jpg" width="100%"/></li>');
 
-  $('#'+id+' ul').css({ width: sliderUlWidth, top:0, left:-slideWidth});
-  $('#'+id+' ul li').css({ width:slideWidth, float: "left" });
+  $('#'+id+' ul').css({ width: sliderUlWidth, height:slideHeight, top:0, left:-slideWidth});
+  $('#'+id+' ul li').css({ width:slideWidth, height:slideHeight, float: "left" });
 
   $('#'+id+' ul').animate({
             left: 0
@@ -129,7 +130,7 @@ function getRandomInt(min, max) {
 
 $( document ).ready(function() {
   //
-  setInterval(function(){
+  timer = setInterval(function(){
     slider();
   }, 6000);
 
@@ -179,12 +180,21 @@ $( document ).ready(function() {
 
 
 $( window ).resize(function() {
-  // $('#bold').css({
-  //   'height':$(window).height(),
-  // });
-  // $('#italic').css({
-  //   'height':$(window).height(),
-  // });
+  $('#bold').css({
+    //'height':$(window).height(),
+    'height':$(window).width()*3/5,
+  });
+  $('#italic').css({
+    'height':$(window).width()*3/5,
+  });
+  //clearInterval(timer);
+
+  slideWidth = $(window).width()/2;
+  slideHeight = $(window).width()*3/5;
+  sliderUlWidth = slideCount * slideWidth;
+  sliderUlHeight = slideCount * slideHeight;
+
+  $('.wrapper ul li').css({ width:slideWidth, height:slideHeight });
 });
 
 

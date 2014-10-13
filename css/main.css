@@ -12,6 +12,7 @@ body{
   position:relative;
   background:#fff;
   font-size:13pt;
+  overflow:hidden;
 }
 
 .more{
@@ -93,6 +94,7 @@ body{
   display:block;
   margin:0;
   padding:0;
+  overflow:hidden;
 }
 
 .wrapper ul li img{
