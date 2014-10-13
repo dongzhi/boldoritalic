@@ -4,6 +4,11 @@
 	    var sW =$(window).width();
 	    var sH = sW*566/823;
 
+		$('#vimeo iframe').css({
+				'width': $(window).width()*0.75,
+				'height': $(window).width()*0.75*0.5625
+		});
+
 		$("img.lazy").lazyload({
     	effect : "fadeIn"
 		});
@@ -43,6 +48,15 @@
 				});
 
 		});
+
+	});
+
+
+	$( window ).resize(function() {
+			$('#vimeo iframe').css({
+					'width': $(window).width()*0.75,
+					'height': $(window).width()*0.75*0.5625
+			});
 
 	});
 

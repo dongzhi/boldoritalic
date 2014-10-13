@@ -218,6 +218,10 @@ width: auto;
 #process ul li{
 }
 
+#vimeo{
+  padding:3em 0 0;
+}
+
 footer{
 	padding: 80px 0 100px;
 	text-align: center;
