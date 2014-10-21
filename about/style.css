@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, code, em, img, q, small, strong, dd, dl, dt, li, ol, ul, fieldset, form, label, table, tbody, tr, th, td, input {
+  margin:0;
+  padding:0;
+  border: 0;
+}
+
+a,a:visited{
+ color:#333;
+}
+
+a:hover, a:active{
+  color:#fff;
+  text-decoration:none;
+  background:#000;
+}
+
+/****************
+Font
+****************/
+@font-face { font-family: 'Orator Std'; src: url('fonts/oratorstd-webfont.eot'); src: url('fonts/oratorstd-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/oratorstd-webfont.svg#Orator Std') format('svg'), url('fonts/oratorstd-webfont.woff') format('woff'), url('fonts/oratorstd-webfont.ttf') format('truetype'); font-weight: normal; font-style: normal;}
+
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('fonts/BebasNeue-webfont.eot');
+    src: url('fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('fonts/BebasNeue-webfont.woff') format('woff'),
+         url('fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'PillGothic';
+    src: url('fonts/pillgothic300mg-light-webfont.eot');
+    src: url('fonts/pillgothic300mg-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/pillgothic300mg-light-webfont.woff') format('woff'),
+         url('fonts/pillgothic300mg-light-webfont.ttf') format('truetype'),
+         url('fonts/pillgothic300mg-light-webfont.svg#pill_gothic_300mglight') format('svg');
+    font-weight:300;
+}
+
+@font-face {
+    font-family: 'PillGothic';
+	  src: url('fonts/pillgothic300mg-regular-webfont.eot');
+    src: url('fonts/pillgothic300mg-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/pillgothic300mg-regular-webfont.woff') format('woff'),
+         url('fonts/pillgothic300mg-regular-webfont.ttf') format('truetype'),
+         url('fonts/pillgothic300mg-regular-webfont.svg#pill_gothic_300mgregular') format('svg');
+    font-weight: 500;
+}
+/****************
+Structure
+****************/
+body{
+	background: #fff;
+	font-family: 'PillGothic';
+	font-size: 1em;
+	line-height: 140%;
+  font-weight:300;
+}
+
+.wrapper{
+width: auto;
+}
+
+.more{
+  position:fixed;
+  left:16px;
+  top:15px;
+}
+
+.more_icon a{
+  border:2px solid transparent;
+  display:inline-block;
+  width:22px;
+  height:19px;
+  padding:3px;
+  float:left;
+  transition: all .4s;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  -o-transition: all .4s;
+}
+
+.more_icon a img{
+  width:100%;
+}
+
+.more ul{
+  position:fixed;
+  top:15px;
+  left:52px;
+  list-style:none;
+  display: none;
+}
+
+.more ul li{
+  margin-bottom:2px;
+  background:#000;
+}
+
+.more ul li a{
+  color:#fff;
+  display:block;
+  text-decoration:none;
+  text-transform:uppercase;
+  line-height:100%;
+  font-size:0.7em;
+  font-family:'Orator Std';
+  padding:4px 5px 1px 5px;
+  width:190px;
+  letter-spacing:1px;
+}
+
+
+.main{
+	width: 100%;
+	margin: 70px auto;
+	overflow: hidden;
+}
+
+.main article{
+	margin: 10px auto;
+	width: 75%;
+}
+
+.main article .left{
+	display: inline-block;
+	width: 48.5%;
+	vertical-align:text-top;
+}
+
+
+.main article strong{
+	font-family: 'Museo';
+	font-weight: 700;
+	display: block;
+	font-size: 1.2em;
+	line-height: 150%;
+}
+
+.main article .right{
+	display: inline-block;
+	vertical-align:text-top;
+	width: 47%;
+	margin-left: 2em;
+}
+
+
+
+.main img{
+  widht:100%;
+}
+
+.main h1{
+	font-size: 1.2em;
+	font-weight: 500;
+  text-transform:uppercase;
+	line-height: 200%;
+}
+
+.main article p{
+	margin: 20px 0;
+}
+
+
+footer{
+	padding: 80px 0 100px;
+	text-align: center;
+  background:#f1f1f1;
+  position:fixed;
+  display:block;
+  width:100%;
+  bottom:0;
+  left:0;
+}
