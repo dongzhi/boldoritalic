@@ -6,17 +6,6 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a,
   border: 0;
 }
 
-
-a,a:visited{
- color:#333;
-}
-
-a:hover, a:active{
-  color:#fff;
-  text-decoration:none;
-  background:#000;
-}
-
 /****************
 Font
 ****************/
@@ -226,4 +215,79 @@ footer{
 	padding: 80px 0 100px;
 	text-align: center;
   background:#f1f1f1;
+}
+
+
+.main a,a:visited{
+ color:#333;
+}
+
+.main a:hover,.main a:active{
+  color:#fff;
+  text-decoration:none;
+  background:#000;
+}
+
+#featured a, #featured a:active, #featured a:visited{
+  display:inline-block;
+  opacity:0.6;
+  transition: all .2s;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -o-transition: all .2s;
+  background:transparent;
+  margin:0.5em 1.5em 0.5em 0;
+  line-height:120%;
+  vertical-align: middle;
+}
+
+#featured a:hover{
+  opacity:0.3;
+  transition: all .2s;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -o-transition: all .2s;
+  background:transparent;
+}
+
+#featured a.creativeprojects{
+  width:300px;
+}
+
+#featured a.fubiz{
+  width:120px;
+}
+
+#featured a.designboom{
+  width:250px;
+}
+
+#featured a.designboom{
+  width:250px;
+}
+
+#featured a.notcot{
+}
+
+#featured a.fox{
+  width:80px;
+}
+
+#featured a.feel{
+}
+
+#featured a.laugh{
+  width:80px;
+}
+
+#featured a.spic{
+  width:150px;
+}
+
+#featured a.3dprint{
+  width:200px;
+}
+
+#featured a img{
+  width:100%;
 }
