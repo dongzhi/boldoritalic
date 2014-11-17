@@ -292,6 +292,18 @@ footer{
   width:200px;
 }
 
+#featured a.smithsonian{
+  width:200px;
+}
+
+#featured a.mymodernmet{
+  width:120px;
+}
+
+#featured a.live105{
+  width:200px;
+}
+
 #featured a img{
   width:100%;
 }
