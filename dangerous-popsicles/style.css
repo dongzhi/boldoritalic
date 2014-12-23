@@ -267,7 +267,15 @@ footer{
 }
 
 #featured a.designboom{
-  width:250px;
+  width:200px;
+}
+
+#featured a.buzzfeed{
+  width:200px;
+}
+
+#featured a.nydaily{
+  width:200px;
 }
 
 #featured a.notcot{
