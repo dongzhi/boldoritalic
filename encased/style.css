@@ -108,9 +108,10 @@ width: auto;
 #header{
 	text-align: center;
 	background: url('images/header_temporary.jpg');
-  background-position: center -100px;
+  background-position: top center;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
 	position: relative;
 	opacity: 1;
 }
@@ -134,11 +135,6 @@ width: auto;
 
 
 .main article strong{
-	font-family: 'Museo';
-	font-weight: 700;
-	display: block;
-	font-size: 1.2em;
-	line-height: 150%;
 }
 
 .main article .right{
@@ -161,10 +157,9 @@ width: auto;
 	margin: 20px 0;
 }
 
-.main br{
+.main article img{
   display: block;
-  padding: 10px 0;
-  line-height: 200%;
+  margin-bottom: 15px;
 }
 
 .main .col{
